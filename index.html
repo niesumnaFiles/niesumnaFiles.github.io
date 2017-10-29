@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Niesumna </title>
+		<link rel="shortcut icon" type="image/png" href="icon.png">
+		<style>
+			body{
+				overflow:hidden;
+			}
+			@font-face {
+				font-family: 'MyWebFont';
+				src: url('Verdana.woff') format('woff'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+				url('Verdana.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+			}
+			
+			div {
+				font-family: myWebFont;
+			}
+			
+			iframe {
+				font-family: myWebFont;
+			}
+		</style>
+	</head>
+	<body>
+		<script>
+			function bak(){
+				var s =  document.getElementById("s");
+				s.src = "begin.html";
+			}
+		</script>
+		<img id="icon" onclick="bak();" src="icon.png" width="50" style="position:absolute; top: 10; left: 10px; z-index: 3;" />
+		<div style="position:absolute; top: 23px; left: 70px; z-index: 3; color: rgb(70,70,70); font-size: 18px; font-family: myWebFont;">Niesumma</div>
+		<div id="background">
+			<img id="img" src="https://393100b3-a-d18f41d7-s-sites.googlegroups.com/a/lpsk12.org/image-storage/files/gray-construction-paper-texture.jpg?attachauth=ANoY7cokxhN31ElAgr9Rtovor3Nfvw6rir-HahEkBpVROLJTjuzfBb3PPkSjnI3zyXT1fjgcACPGVPd721dWvfRHFfANPBNLXsiOvwDfDBkOvWM5kbWdfJmqXO1KyReSOVDqEniSh1wUQvywrCZJryEJ-W7Wm5s7NGjJReqidQs7Zip1d5hyvAVi5r-5HzHHbswGq_7OsW8QahVNn0bepaQDrb1_QPGb93kuwjq24Y7WR6pmSEPIWdrQhQukbj-d6PLItDBKvyUJ&attredirects=0" style="position:absolute; top: 50%; left: 50%; transform:translate(-50%,-50%"); display:block; z-index: 0;></img>
+			<script>
+				//set image widths and heights
+				window.onload = function(){
+					var img = document.getElementById("img");
+					if(window.innerWidth > img.width){
+						img.width = window.innerWidth;
+					}else if(window.innerHeight > img.height){
+						img.height = window.innerHeight;
+					}
+				};
+				
+				window.onresize = function(){
+					var img = document.getElementById("img");
+					if(window.innerWidth > img.width){
+						img.width = window.innerWidth;
+					}else if(window.innerHeight > img.height){
+						img.height = window.innerHeight;
+					}
+				};
+			</script>
+		</div>
+
+		<!-- finished backgound =) -->
+
+		<!-- here is the iframe window -->
+
+		<iframe id="s" src="begin.html" style="width: 100%; height: 100vh; position:absolute; top: 100px; left: 50%; transform:translateX(-50%); border: none;">
+			<script>
+				document.getElementById("s").style.width = window.innerWidth-100 + "px";
+			</script>
+		</iframe>
+
+		<div id="claimer" style="position:absolute; bottom: 0; left: 0; width: 100%; height: 30px; background-color: gray; border-style: solid; border: none; border-top: solid rgb(120,120,120);">
+			<p style="position:absolute; top: -8px; left: 50%; transform:translateX(-50%); color: rgb(90,90,90); font-size: 10px;">Made by Athdot. Send an Email to supniesumna@gmail.com with reveiws</p>
+		</div>
+	</body>
+</html>
