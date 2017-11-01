@@ -1,15 +1,3 @@
-var audio = new Audio('https://niesumnaFiles.github.io/konamiEasterEgg/contra.mp3');
-function check(){
-var text = document.getElementById("text");
-if(text.value === "wwssadadba"){
-play();
-audio.addEventListener("ended", play, true);
-}
-
-function play(){
-audio.play();
-}
-
 function getThing(){
 	var intOne = Math.round(Math.random()*26);
 	var res = "unknown";
