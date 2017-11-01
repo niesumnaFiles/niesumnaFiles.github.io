@@ -3,15 +3,10 @@
 		function check(){
 			var text = document.getElementById('text');
 			if(text.value === 'wwssadadba'){
-				play();
-				audio.addEventListener('ended', play, true);
+				audio.play();
 			}
 		}
 
-		function play(){
-			audio.play();
-			alert("y no work");
-		}
 
 function getThing(){
 	var intOne = Math.round(Math.random()*26);
@@ -444,7 +439,7 @@ function tour(){
 	return s1 + s2;
 }
 
-function have(){
+function speak(){
 	var s1 = "Speak in a ";
 	var s2;
 	var s3 = " accent for the Rest of the day";
