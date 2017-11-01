@@ -6,11 +6,11 @@
 				play();
 				audio.addEventListener('ended', play, true);
 			}
-			alert(text.value);
 		}
 
 		function play(){
 			audio.play();
+			alert("y no work");
 		}
 
 function getThing(){
