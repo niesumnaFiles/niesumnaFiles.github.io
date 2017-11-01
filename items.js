@@ -62,7 +62,7 @@ function getThing(){
 	}else if(intOne == 23){
 		res = "What Celeberties have your birthday? Learn About them!";
 	}else if(intOne == 24){
-		res = "Do the Konami Code width the wsad keys as arrows and the space bar as start <br> <input type="text" id="text" onkeypress="check()" style="width: 100%;" />";
+		res = "Do the Konami Code width the wsad keys as arrows and the space bar as start <br> <input type='text' id='text' onkeypress='check()' style='width: 100%;' />";
 	}else if(intOne == 25){
 		res = watch();
 	}else if(intOne == 26){
