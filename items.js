@@ -1,3 +1,15 @@
+var audio = new Audio('https://niesumnaFiles.github.io/konamiEasterEgg/contra.mp3');
+function check(){
+var text = document.getElementById("text");
+if(text.value === "wwssadadba"){
+play();
+audio.addEventListener("ended", play, true);
+}
+
+function play(){
+audio.play();
+}
+
 function getThing(){
 	var intOne = Math.round(Math.random()*26);
 	var res = "unknown";
@@ -50,21 +62,7 @@ function getThing(){
 	}else if(intOne == 23){
 		res = "What Celeberties have your birthday? Learn About them!";
 	}else if(intOne == 24){
-		res = "Do the Konami Code width the wsad keys as arrows and the space bar as start <br> 
-<input type="text" id="text" onkeypress="check()" style="width: 100%;" />
-<script>
-var audio = new Audio('https://niesumnaFiles.github.io/konamiEasterEgg/contra.mp3');
-function check(){
-var text = document.getElementById("text");
-if(text.value === "wwssadadba"){
-play();
-audio.addEventListener("ended", play, true);
-}
-
-function play(){
-audio.play();
-}
-</script>";
+		res = "Do the Konami Code width the wsad keys as arrows and the space bar as start <br> <input type="text" id="text" onkeypress="check()" style="width: 100%;" />";
 	}else if(intOne == 25){
 		res = watch();
 	}else if(intOne == 26){
