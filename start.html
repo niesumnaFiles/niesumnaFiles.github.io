@@ -30,9 +30,9 @@
 		}
 		jatwo.style.height = ja.clientHeight + "px";
 		var a = document.getElementById("tryAgain");
-		setTimeout(function(){
-		a.style.top =  (ja.clientHeight + 70) + "px";
-		},20);
+		ja.onload = function(){
+			a.style.top =  (ja.clientHeight + 70) + "px";
+		};
 	}
 </script>
 
